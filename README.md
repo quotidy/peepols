@@ -1,4 +1,24 @@
 # peepols
+https://quotidy.github.io/peepols/#/Contact
+
+Small project made to learn the basics of the Vuejs framework.
+
+## Current libraries:
+
+-Vuejs
+
+-Vuex for state management
+
+-VueRouter for page routing
+
+-VueResource for http calls
+
+-BootstrapVue for styling
+
+## Current functionality:
+-Add a contact object
+
+-Retrieves contacts from a firebase database and displays it
 
 ## Project setup
 ```
