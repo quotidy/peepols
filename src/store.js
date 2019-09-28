@@ -9,7 +9,9 @@ export default new Vuex.Store({
   },
   mutations: {
     addContact: (state, payload) => {
+      console.log(state.contacts);
       state.contacts.push(payload);
+      console.log(state.contacts);
     },
     setContacts: (state, payload) => {
       state.contacts = payload;
@@ -22,7 +24,7 @@ export default new Vuex.Store({
         .then(response => {
           console.log(response);
           context.commit('addContact', payload);
-        });;
+        });
     },
     getContacts: context => {
       Vue.http.get('https://peepols-a152c.firebaseio.com/contact.json').then(response => {
